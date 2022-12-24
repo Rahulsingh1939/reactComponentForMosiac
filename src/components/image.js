@@ -1,11 +1,33 @@
-import React from 'react'
+import React from 'react';
+
+import Card from './card.js';
 
 function Image() {
-  return (
-    <div>
-      This Component wil be used to display images
-    </div>
-  )
+    return (
+        <div style={styles.container}>
+            <Card size="small" />
+            <Card size="medium" />
+            <Card size="large" />
+            <Card size="medium" />
+            <Card size="large" />
+        </div>
+    )
 }
 
-export default Image
+const styles = {
+    container: {
+        margin: 0,
+        padding: 0,
+        width: '80vw',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, 250px)',
+        gridAutoRows: '10px',
+        position: 'absolute',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        justifyContent: 'center',
+        backgroundColor: 'LightGray'
+    }
+}
+
+export default Image;
