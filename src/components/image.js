@@ -10,6 +10,9 @@ function Image() {
             <Card size="large" />
             <Card size="medium" />
             <Card size="large" />
+            <Card size="large" />
+            <Card size="medium" />
+            <Card size="small" />
         </div>
     )
 }
