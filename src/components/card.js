@@ -2,11 +2,11 @@ import React from 'react';
 
 function Card(props) {
     const handleMouseEnter = e => {
-        e.target.style.background = "grey"
+        e.target.style.transform = "scale(1.25)"
+        e.target.style.transition = "transform 0.5s"
       }
       const handleMouseLeave = e => {
-        e.target.style.backgroundImage = "url('https://picsum.photos/200/300')"
-        e.target.style.backgroundSize = 'cover'
+        e.target.style.transform = "scale(1)"
       }
     return (
         <div 
@@ -22,11 +22,12 @@ function Card(props) {
 
 const styles = {
     card: {
-        margin: '15px 10px',
+        margin: '25px 20px',
         padding: 0,
         borderRadius: '16px',
         backgroundColor: 'red',
         backgroundImage: "url('https://picsum.photos/200/300')",
+        backgroundPosition: 'center',
         backgroundSize: 'cover'
     },
     small: {
