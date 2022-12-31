@@ -2,7 +2,7 @@ import React from 'react';
 
 function Card(props) {
     const handleMouseEnter = e => {
-        e.target.style.transform = "scale(1.25)"
+        e.target.style.transform = "scale(1.2)"
         e.target.style.transition = "transform 0.5s"
       }
       const handleMouseLeave = e => {
@@ -14,7 +14,7 @@ function Card(props) {
         onMouseLeave={handleMouseLeave}
         style={{
             ...styles.card,
-            ...styles[props.size]
+            ...styles[props.size],
         }}>
         </div>
     )
@@ -25,7 +25,7 @@ const styles = {
         margin: '25px 20px',
         padding: 0,
         borderRadius: '16px',
-        backgroundColor: 'red',
+        backgroundColor: '#cccccc',
         backgroundImage: "url('https://picsum.photos/200/300')",
         backgroundPosition: 'center',
         backgroundSize: 'cover'
@@ -34,7 +34,7 @@ const styles = {
         gridRowEnd: 'span 30'
     },
     medium: {
-        gridRowEnd: 'span 35'
+        gridRowEnd: 'span 37'
     },
     large: {
         gridRowEnd: 'span 45'

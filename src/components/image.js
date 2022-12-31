@@ -1,18 +1,15 @@
 import React from 'react';
-
+import {Photos} from '../data/photos';
 import Card from './card.js';
+
+const data =Photos;
 
 function Image() {
     return (
         <div style={styles.container}>
-            <Card size="small" />
-            <Card size="medium" />
-            <Card size="large" />
-            <Card size="medium" />
-            <Card size="large" />
-            <Card size="large" />
-            <Card size="medium" />
-            <Card size="small" />
+            {data.map((item) => {
+          return <Card size="large"/>;
+        })}
         </div>
     )
 }
@@ -23,7 +20,7 @@ const styles = {
         padding: 0,
         width: '80vw',
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, 250px)',
+        gridTemplateColumns: 'repeat(auto-fill, 350px)',
         gridAutoRows: '10px',
         position: 'absolute',
         left: '50%',

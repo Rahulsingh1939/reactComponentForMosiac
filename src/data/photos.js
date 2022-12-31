@@ -1,4 +1,5 @@
-export const photos= [
+
+export const Photos= [
     {
     id: 1,
     img:"../assets/av1.jpg"
@@ -25,5 +26,8 @@ export const photos= [
     },
     {
     id: 7,
+    },
+    {
+    id: 8,
     }
 ];
